@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز موعد</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حجز موعد</h1>
+        <form id="appointmentForm">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" required>
+            <label for="date">التاريخ:</label>
+            <input type="date" id="date" required>
+            <label for="time">الوقت:</label>
+            <input type="time" id="time" required>
+            <button type="submit">حجز موعد</button>
+        </form>
+        <h2>المواعيد الحالية</h2>
+        <ul id="appointmentsList"></ul>
+    </div>
+    <script src="booking.js"></script>
+</body>
+</html>

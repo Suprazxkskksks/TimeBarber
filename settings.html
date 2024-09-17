@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإعدادات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>الإعدادات</h1>
+        <label for="language">اللغة:</label>
+        <select id="language" onchange="changeLanguage()">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+            <option value="am">ⴰⵎⴰⵣⵉⵖⵜ</option>
+            <option value="es">Español</option>
+        </select>
+        <label for="theme">الوضع:</label>
+        <select id="theme" onchange="changeTheme()">
+            <option value="light">نهاري</option>
+            <option value="dark">ليلي</option>
+        </select>
+        <label for="reminderTime">مدة التذكير (بالدقائق):</label>
+        <input type="number" id="reminderTime" value="60" min="1">
+        <button onclick="saveSettings()">حفظ الإعدادات</button>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>
